@@ -136,6 +136,7 @@ html, body {
 // Course info
 #course-info {
 	width: 270px;
+	padding-bottom: 415px;
 }
 #course-highlight {
 	height: 203px;
@@ -230,6 +231,7 @@ html, body {
 					padding: 24px 20px 0 5px;
 					border-bottom: 2px solid $dividerColor;
 					cursor: pointer;
+					position: relative;
 						&:last-child {
 							border-bottom: none;
 						}
@@ -239,6 +241,47 @@ html, body {
 							font-size: 11px;
 							text-transform: uppercase;
 						}
+						.icon {
+							position: absolute;
+						}
 				}
+		}
+}
+
+// States for menu content
+.untouched {
+	color: #fff;
+		.icon {
+			width: 6px;
+			height: 14px;
+			background: transparent url(../img/bullet_icon_on.png) 0 0 no-repeat;
+			top: 30px; left: -21px;
+		}
+}
+.inprogress {
+	color: #949494;
+		.icon {
+			width: 6px;
+			height: 14px;
+			background: transparent url(../img/bullet_icon_off.png) 0 0 no-repeat;
+			top: 30px; left: -21px;
+		}
+}
+.current {
+	color: #fff;
+		.icon {
+			width: 16px;
+			height: 24px;
+			background: transparent url(../img/arrow_icon.png) 0 0 no-repeat;
+			top: 21px; left: -26px;
+		}
+}
+.finished {
+	color: #5f6a6d;
+		.icon {
+			width: 16px;
+			height: 24px;
+			background: transparent url(../img/check_icon.png) 0 0 no-repeat;
+			top: 21px; left: -26px;
 		}
 }
