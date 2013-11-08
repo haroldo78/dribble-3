@@ -42,6 +42,9 @@ a:hover, a:active {
 button {
   cursor: pointer; }
 
+html, body {
+  height: 100%; }
+
 #site-wrap header {
   height: 69px;
   padding-top: 1px;
@@ -191,19 +194,21 @@ button {
 #course-lessons {
   min-height: 60px;
   background: #313b3d; }
-  #course-lessons .parent-section:after {
-    height: 0;
-    content: '';
-    visibility: hidden;
-    clear: both;
-    display: block; }
-  #course-lessons .parent-section > h1 {
-    height: 60px;
-    padding-left: 29px;
-    font-size: 13px;
-    color: #8c989c;
-    line-height: 61px;
-    background: #232b2d; }
+  #course-lessons .parent-section {
+    background: transparent url(../img/vertical_line_pattern.png) 49px 0 repeat-y; }
+    #course-lessons .parent-section:after {
+      height: 0;
+      content: '';
+      visibility: hidden;
+      clear: both;
+      display: block; }
+    #course-lessons .parent-section > h1 {
+      height: 60px;
+      padding-left: 29px;
+      font-size: 13px;
+      color: #8c989c;
+      line-height: 61px;
+      background: #232b2d; }
   #course-lessons .child-section {
     width: 219px;
     color: #fff;
@@ -217,8 +222,3 @@ button {
         padding-left: 27px;
         font-size: 11px;
         text-transform: uppercase; }
-  #course-lessons .vertical-line {
-    width: 49px;
-    min-height: 200px;
-    border-right: 2px solid #3b4648;
-    float: left; }

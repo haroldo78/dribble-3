@@ -33,6 +33,10 @@ $redOrangeDarker: #de5939;
 // Imports
 @import 'reset';
 
+html, body {
+	height: 100%;
+}
+
 // Site wrap
 #site-wrap {
 	header {
@@ -207,6 +211,7 @@ $redOrangeDarker: #de5939;
 	min-height: 60px;
 	background: $lightGray;
 		.parent-section {
+			background: transparent url(../img/vertical_line_pattern.png) 49px 0 repeat-y;
 			@include clearFix;
 				>h1 {
 					height: 60px;
@@ -232,11 +237,5 @@ $redOrangeDarker: #de5939;
 							text-transform: uppercase;
 						}
 				}
-		}
-		.vertical-line {
-			width: 49px;
-			min-height: 200px;
-			border-right: 2px solid $dividerColor;
-			float: left;
 		}
 }
