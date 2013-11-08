@@ -9,8 +9,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
   font: 13px/18px Arial, Verdana, sans-serif;
-  color: black;
-  background: #cccccc; }
+  color: #262626;
+  background: white url(../img/test_bg.jpg) 0 0 no-repeat; }
 
 a {
   text-decoration: none;
@@ -31,13 +31,49 @@ textarea {
   overflow: auto\9; }
 
 a:link, a:visited {
-  color: black; }
+  color: #8c989c; }
 
 a:hover, a:active {
-  color: black; }
+  color: white; }
 
 *:focus {
   outline: none; }
 
 button {
   cursor: pointer; }
+
+#site-wrap header {
+  height: 69px;
+  padding-top: 1px;
+  background: transparent; }
+  #site-wrap header:after {
+    height: 0;
+    content: '';
+    visibility: hidden;
+    clear: both;
+    display: block; }
+  #site-wrap header h1, #site-wrap header nav, #site-wrap header li {
+    float: left; }
+  #site-wrap header h1 {
+    width: 113px;
+    margin: 23px 0 0 24px; }
+    #site-wrap header h1 a {
+      width: 113px;
+      height: 24px;
+      text-indent: -9999px;
+      display: block;
+      background: transparent url(../img/logo.png) 0 0 no-repeat; }
+  #site-wrap header nav {
+    margin: 24px 0 0 39px; }
+    #site-wrap header nav li a {
+      padding: 15px; }
+      #site-wrap header nav li a:hover {
+        background: #313b3d; }
+
+#search input {
+  color: #fff;
+  background: #313b3d;
+  border-radius: 5px; }
+
+#user-login {
+  color: #8c989c; }

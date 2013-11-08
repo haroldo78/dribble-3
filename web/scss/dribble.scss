@@ -1,14 +1,14 @@
 // Variables
 $bodyText: #262626;
 $bodyBg: #fff;
-$mainLinkColor: #70c989;
-$mainHoverColor: #b7c6c9;
+$mainLinkColor: #8c989c;
+$mainHoverColor: #fff;
 
 // Mixins & Shortcuts
 @mixin bodyStyle {
 	font: 13px/18px Arial, Verdana, sans-serif;
 	color: $bodyText;
-	background: $bodyBg;
+	background: $bodyBg url(../img/test_bg.jpg) 0 0 no-repeat;
 }
 @mixin clearFix {
 	&:after {
@@ -19,6 +19,56 @@ $mainHoverColor: #b7c6c9;
 		display: block;
 	}
 }
+@mixin textIndent {
+	text-indent: -9999px;
+	display: block;
+}
 
 // Imports
 @import 'reset';
+
+#site-wrap {
+	header {
+		height: 69px;
+		padding-top: 1px; // Fix collapsible-margin
+		background: transparent;//#232b2d;
+		@include clearFix;
+			h1, nav, li {
+				float: left;
+			}
+			h1 {
+				width: 113px;
+				margin: 23px 0 0 24px;
+					a {
+						width: 113px;
+						height: 24px;
+						@include textIndent;
+						background: transparent url(../img/logo.png) 0 0 no-repeat;
+				  }
+			}
+			nav {
+				margin: 24px 0 0 39px;
+					ul {
+
+					}
+					li {
+						a {
+							padding: 15px;
+								&:hover {
+									background: #313b3d;
+								}
+						}
+					}
+			}
+	}
+}
+#search {
+	input {
+		color: #fff;
+		background: #313b3d;
+		border-radius: 5px;
+	}
+}
+#user-login {
+	color: #8c989c;
+}
