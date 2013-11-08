@@ -84,4 +84,20 @@ button {
 
 #user-login {
   width: 191px;
-  color: #8c989c; }
+  margin-top: 18px;
+  color: #8c989c;
+  cursor: pointer; }
+  #user-login > img, #user-login > p {
+    float: left; }
+  #user-login img {
+    width: 32px;
+    height: 32px; }
+  #user-login p {
+    padding: 0 22px 0 16px;
+    line-height: 32px;
+    background: transparent url(../img/dropdown_icon.png) right center no-repeat; }
+  #user-login:hover #control-panel {
+    display: block; }
+
+#control-panel {
+  display: none; }

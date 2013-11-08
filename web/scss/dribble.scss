@@ -27,6 +27,7 @@ $mainHoverColor: #fff;
 // Imports
 @import 'reset';
 
+// Site wrap
 #site-wrap {
 	header {
 		height: 69px;
@@ -65,6 +66,8 @@ $mainHoverColor: #fff;
 #search, #user-login {
 	float: right;
 }
+
+// Search box
 #search {
 	margin: 17px 28px 0 0;
 		input {
@@ -75,7 +78,31 @@ $mainHoverColor: #fff;
 			border-radius: 30px;
 		}
 }
+
+// User login module & control panel
 #user-login {
 	width: 191px;
+	margin-top: 18px;
 	color: #8c989c;
+	cursor: pointer;
+		>img, >p {
+			float: left;
+		}
+		img {
+			width: 32px;
+			height: 32px;
+		}
+		p {
+			padding: 0 22px 0 16px;
+			line-height: 32px;
+			background: transparent url(../img/dropdown_icon.png) right center no-repeat;
+		}
+		&:hover {
+			#control-panel {
+				display: block;
+			}
+		}
+}
+#control-panel {
+	display: none;
 }
