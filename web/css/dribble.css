@@ -70,10 +70,18 @@ button {
       #site-wrap header nav li a:hover {
         background: #313b3d; }
 
-#search input {
-  color: #fff;
-  background: #313b3d;
-  border-radius: 5px; }
+#search, #user-login {
+  float: right; }
+
+#search {
+  margin: 17px 28px 0 0; }
+  #search input {
+    width: 91px;
+    padding: 9px 12px 9px 30px;
+    color: #5f6a6d;
+    background: #313b3d url(../img/magnifier_icon.png) 10px center no-repeat;
+    border-radius: 30px; }
 
 #user-login {
+  width: 191px;
   color: #8c989c; }
