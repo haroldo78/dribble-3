@@ -228,7 +228,8 @@ html, body {
 					height: 86px;
 					margin-left: 17px;
 					padding: 24px 20px 0 5px;
-					border-bottom: 2px solid $dividerColor; // Temporary style
+					border-bottom: 2px solid $dividerColor;
+					cursor: pointer;
 						&:last-child {
 							border-bottom: none;
 						}
