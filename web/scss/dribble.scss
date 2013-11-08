@@ -119,6 +119,7 @@ $dividerColor: #3b4648;
 				a {
 					display: block;
 				}
+				// This is not supported in earlier IE browsers
 				&:last-child {
 					border-bottom: none;
 				}
