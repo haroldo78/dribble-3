@@ -202,11 +202,10 @@ html, body {
       clear: both;
       display: block; }
     #course-lessons .parent-section > h1 {
-      height: 60px;
-      padding-left: 29px;
+      min-height: 18px;
+      padding: 21px 22px 21px 29px;
       font-size: 13px;
       color: #8c989c;
-      line-height: 61px;
       background: #232b2d; }
   #course-lessons .child-section {
     width: 219px;

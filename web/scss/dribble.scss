@@ -213,11 +213,10 @@ html, body {
 			background: transparent url(../img/vertical_line_pattern.png) 49px 0 repeat-y;
 			@include clearFix;
 				>h1 {
-					height: 60px;
-					padding-left: 29px;
+					min-height: 18px;
+					padding: 21px 22px 21px 29px;
 					font-size: 13px;
 					color: $mainLinkColor;
-					line-height: 61px;
 					background: $darkGray;
 				}
 		}
