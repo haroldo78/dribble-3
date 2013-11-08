@@ -201,7 +201,42 @@ $redOrangeDarker: #de5939;
 				}
 		}
 }
+
+// Course lesson wrapper and styles
 #course-lessons {
 	min-height: 60px;
-	background: $darkGray;
+	background: $lightGray;
+		.parent-section {
+			@include clearFix;
+				>h1 {
+					height: 60px;
+					padding-left: 29px;
+					font-size: 13px;
+					color: $mainLinkColor;
+					line-height: 61px;
+					background: $darkGray;
+				}
+		}
+		.child-section {
+			width: 219px;
+			color: #fff;
+			float: right;
+				section {
+					height: 87px;
+					padding: 24px 0 0 21px;
+					border-bottom: 2px solid $dividerColor; // Temporary style
+						h1 {
+							margin-bottom: 9px;
+							padding-left: 27px;
+							font-size: 11px;
+							text-transform: uppercase;
+						}
+				}
+		}
+		.vertical-line {
+			width: 49px;
+			min-height: 200px;
+			border-right: 2px solid $dividerColor;
+			float: left;
+		}
 }
