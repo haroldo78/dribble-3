@@ -170,8 +170,36 @@ $redOrangeDarker: #de5939;
 		}
 }
 #course-progress {
-	height: 80px;
+	height: 55px;
+	padding-top: 25px;
 	background: $redOrangeDark;
+	@include clearFix;
+		p, div {
+			float: left;
+		}
+		p {
+			width: 40px;
+			height: 30px;
+			margin: 0 15px 0 30px; 
+			font-weight: bold;
+			font-size: 10px;
+			color: #fff;
+			text-align: center;
+			line-height: 30px;
+			background: $redOrangeDarker;
+		}
+		div {
+			width: 155px;
+			height: 4px;
+			margin-top: 13px;
+			background: $redOrangeDarker;
+				span {
+					width: 50%; // Temporary, will be set by script
+					height: 4px;
+					background: #fff;
+					display: block;
+				}
+		}
 }
 #course-lessons {
 	min-height: 60px;

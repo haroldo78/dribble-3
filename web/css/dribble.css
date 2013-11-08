@@ -156,8 +156,37 @@ button {
       display: block; }
 
 #course-progress {
-  height: 80px;
+  height: 55px;
+  padding-top: 25px;
   background: #f16645; }
+  #course-progress:after {
+    height: 0;
+    content: '';
+    visibility: hidden;
+    clear: both;
+    display: block; }
+  #course-progress p, #course-progress div {
+    float: left; }
+  #course-progress p {
+    width: 40px;
+    height: 30px;
+    margin: 0 15px 0 30px;
+    font-weight: bold;
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    background: #de5939; }
+  #course-progress div {
+    width: 155px;
+    height: 4px;
+    margin-top: 13px;
+    background: #de5939; }
+    #course-progress div span {
+      width: 50%;
+      height: 4px;
+      background: #fff;
+      display: block; }
 
 #course-lessons {
   min-height: 60px;
