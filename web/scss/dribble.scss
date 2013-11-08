@@ -1,0 +1,24 @@
+// Variables
+$bodyText: #000;
+$bodyBg: #ccc;
+$mainLinkColor: #000;
+$mainHoverColor: #000;
+
+// Mixins & Shortcuts
+@mixin bodyStyle {
+	font: 13px/18px Arial, Verdana, sans-serif;
+	color: $bodyText;
+	background: $bodyBg;
+}
+@mixin clearFix {
+	&:after {
+		height: 0;
+		content: '';
+		visibility: hidden;
+		clear: both;
+		display: block;
+	}
+}
+
+// Imports
+@import 'reset';

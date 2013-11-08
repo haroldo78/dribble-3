@@ -1,0 +1,43 @@
+/* Override default browser styles */
+body, p, ul, li, table, td, a, h1, h2, h3, h4, h5, h6, input, button, figure, figcaption {
+  margin: 0;
+  padding: 0; }
+
+/* Set HTML5 as display block instead of display inline */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  font: 13px/18px Arial, Verdana, sans-serif;
+  color: black;
+  background: #cccccc; }
+
+a {
+  text-decoration: none;
+  outline: none; }
+
+ul {
+  list-style: none; }
+
+img, input, textarea, select, button {
+  border: none; }
+
+table {
+  border-collapse: collapse; }
+
+textarea {
+  outline: none;
+  resize: none;
+  overflow: auto\9; }
+
+a:link, a:visited {
+  color: black; }
+
+a:hover, a:active {
+  color: black; }
+
+*:focus {
+  outline: none; }
+
+button {
+  cursor: pointer; }
