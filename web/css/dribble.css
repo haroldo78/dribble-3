@@ -115,3 +115,18 @@ button {
       display: block; }
     #control-panel li:last-child {
       border-bottom: none; }
+
+#course-info {
+  width: 270px; }
+
+#course-highlight {
+  height: 246px;
+  background: #fa7252; }
+
+#course-progress {
+  height: 80px;
+  background: #f16645; }
+
+#course-lessons {
+  min-height: 60px;
+  background: #232b2d; }

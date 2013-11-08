@@ -6,6 +6,9 @@ $mainHoverColor: #fff;
 $darkGray: #232b2d;
 $lightGray: #313b3d;
 $dividerColor: #3b4648;
+$redOrange: #fa7252;
+$redOrangeDark: #f16645;
+$redOrangeDarker: #de5939;
 
 // Mixins & Shortcuts
 @mixin bodyStyle {
@@ -124,4 +127,21 @@ $dividerColor: #3b4648;
 					border-bottom: none;
 				}
 		}
+}
+
+// Course info
+#course-info {
+	width: 270px;
+}
+#course-highlight {
+	height: 246px;
+	background: $redOrange;
+}
+#course-progress {
+	height: 80px;
+	background: $redOrangeDark;
+}
+#course-lessons {
+	min-height: 60px;
+	background: $darkGray;
 }
