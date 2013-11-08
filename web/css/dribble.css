@@ -231,6 +231,12 @@ html, body {
 
 .untouched {
   color: #fff; }
+  .untouched.picture h1 {
+    background: transparent url(../img/picture_icon_on.png) 0 0 no-repeat; }
+  .untouched.movie h1 {
+    background: transparent url(../img/movie_icon_on.png) 0 0 no-repeat; }
+  .untouched.article h1 {
+    background: transparent url(../img/article_icon_on.png) 0 0 no-repeat; }
   .untouched .icon {
     width: 6px;
     height: 14px;
@@ -240,6 +246,12 @@ html, body {
 
 .inprogress {
   color: #949494; }
+  .inprogress.picture h1 {
+    background: transparent url(../img/picture_icon_off.png) 0 0 no-repeat; }
+  .inprogress.movie h1 {
+    background: transparent url(../img/movie_icon_off.png) 0 0 no-repeat; }
+  .inprogress.article h1 {
+    background: transparent url(../img/article_icon_off.png) 0 0 no-repeat; }
   .inprogress .icon {
     width: 6px;
     height: 14px;
@@ -249,6 +261,12 @@ html, body {
 
 .current {
   color: #fff; }
+  .current.picture h1 {
+    background: transparent url(../img/picture_icon_on.png) 0 0 no-repeat; }
+  .current.movie h1 {
+    background: transparent url(../img/movie_icon_on.png) 0 0 no-repeat; }
+  .current.article h1 {
+    background: transparent url(../img/article_icon_on.png) 0 0 no-repeat; }
   .current .icon {
     width: 16px;
     height: 24px;
@@ -258,6 +276,12 @@ html, body {
 
 .finished {
   color: #5f6a6d; }
+  .finished.picture h1 {
+    background: transparent url(../img/picture_icon_disabled.png) 0 0 no-repeat; }
+  .finished.movie h1 {
+    background: transparent url(../img/movie_icon_disabled.png) 0 0 no-repeat; }
+  .finished.article h1 {
+    background: transparent url(../img/article_icon_disabled.png) 0 0 no-repeat; }
   .finished .icon {
     width: 16px;
     height: 24px;

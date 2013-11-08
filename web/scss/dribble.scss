@@ -248,9 +248,24 @@ html, body {
 		}
 }
 
-// States for menu content
+// States for menu content icons
 .untouched {
 	color: #fff;
+		&.picture {
+			h1 {
+				background: transparent url(../img/picture_icon_on.png) 0 0 no-repeat;
+			}
+		}
+		&.movie {
+			h1 {
+				background: transparent url(../img/movie_icon_on.png) 0 0 no-repeat;
+			}
+		}
+		&.article {
+			h1 {
+				background: transparent url(../img/article_icon_on.png) 0 0 no-repeat;
+			}
+		}
 		.icon {
 			width: 6px;
 			height: 14px;
@@ -260,6 +275,21 @@ html, body {
 }
 .inprogress {
 	color: #949494;
+		&.picture {
+			h1 {
+				background: transparent url(../img/picture_icon_off.png) 0 0 no-repeat;
+			}
+		}
+		&.movie {
+			h1 {
+				background: transparent url(../img/movie_icon_off.png) 0 0 no-repeat;
+			}
+		}
+		&.article {
+			h1 {
+				background: transparent url(../img/article_icon_off.png) 0 0 no-repeat;
+			}
+		}
 		.icon {
 			width: 6px;
 			height: 14px;
@@ -269,6 +299,21 @@ html, body {
 }
 .current {
 	color: #fff;
+		&.picture {
+			h1 {
+				background: transparent url(../img/picture_icon_on.png) 0 0 no-repeat;
+			}
+		}
+		&.movie {
+			h1 {
+				background: transparent url(../img/movie_icon_on.png) 0 0 no-repeat;
+			}
+		}
+		&.article {
+			h1 {
+				background: transparent url(../img/article_icon_on.png) 0 0 no-repeat;
+			}
+		}
 		.icon {
 			width: 16px;
 			height: 24px;
@@ -278,6 +323,21 @@ html, body {
 }
 .finished {
 	color: #5f6a6d;
+		&.picture {
+			h1 {
+				background: transparent url(../img/picture_icon_disabled.png) 0 0 no-repeat;
+			}
+		}
+		&.movie {
+			h1 {
+				background: transparent url(../img/movie_icon_disabled.png) 0 0 no-repeat;
+			}
+		}
+		&.article {
+			h1 {
+				background: transparent url(../img/article_icon_disabled.png) 0 0 no-repeat;
+			}
+		}
 		.icon {
 			width: 16px;
 			height: 24px;
