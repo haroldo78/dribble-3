@@ -192,7 +192,6 @@ html, body {
       display: block; }
 
 #course-lessons {
-  min-height: 60px;
   background: #313b3d; }
   #course-lessons .parent-section {
     background: transparent url(../img/vertical_line_pattern.png) 49px 0 repeat-y; }
@@ -214,9 +213,12 @@ html, body {
     color: #fff;
     float: right; }
     #course-lessons .child-section section {
-      height: 87px;
-      padding: 24px 0 0 21px;
+      height: 86px;
+      margin-left: 17px;
+      padding: 24px 20px 0 5px;
       border-bottom: 2px solid #3b4648; }
+      #course-lessons .child-section section:last-child {
+        border-bottom: none; }
       #course-lessons .child-section section h1 {
         margin-bottom: 9px;
         padding-left: 27px;
