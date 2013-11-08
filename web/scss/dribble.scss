@@ -3,6 +3,9 @@ $bodyText: #262626;
 $bodyBg: #fff;
 $mainLinkColor: #8c989c;
 $mainHoverColor: #fff;
+$darkGray: #232b2d;
+$lightGray: #313b3d;
+$dividerColor: #3b4648;
 
 // Mixins & Shortcuts
 @mixin bodyStyle {
@@ -32,9 +35,9 @@ $mainHoverColor: #fff;
 	header {
 		height: 69px;
 		padding-top: 1px; // Fix collapsible-margin
-		background: transparent;//#232b2d;
+		background: $darkGray;
 		@include clearFix;
-			h1, nav, li {
+			h1, nav {
 				float: left;
 			}
 			h1 {
@@ -49,16 +52,14 @@ $mainHoverColor: #fff;
 			}
 			nav {
 				margin: 24px 0 0 39px;
-					ul {
-
-					}
 					li {
-						a {
-							padding: 15px;
-								&:hover {
-									background: #313b3d;
-								}
-						}
+						float: left;
+							a {
+								padding: 15px;
+									&:hover {
+										background: $lightGray;
+									}
+							}
 					}
 			}
 	}
@@ -74,7 +75,7 @@ $mainHoverColor: #fff;
 			width: 91px;
 			padding: 9px 12px 9px 30px;
 			color: #5f6a6d;
-			background: #313b3d url(../img/magnifier_icon.png) 10px center no-repeat;
+			background: $lightGray url(../img/magnifier_icon.png) 10px center no-repeat;
 			border-radius: 30px;
 		}
 }
@@ -85,6 +86,7 @@ $mainHoverColor: #fff;
 	margin-top: 18px;
 	color: #8c989c;
 	cursor: pointer;
+	position: relative;
 		>img, >p {
 			float: left;
 		}
@@ -105,4 +107,20 @@ $mainHoverColor: #fff;
 }
 #control-panel {
 	display: none;
+	position: absolute; top: 35px;
+		ul {
+
+		}
+		li {
+			width: 151px;
+			padding: 5px 0 5px 15px;
+			background: $lightGray;
+			border-bottom: 1px solid $dividerColor;
+				a {
+					display: block;
+				}
+				&:last-child {
+					border-bottom: none;
+				}
+		}
 }

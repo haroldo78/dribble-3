@@ -45,14 +45,14 @@ button {
 #site-wrap header {
   height: 69px;
   padding-top: 1px;
-  background: transparent; }
+  background: #232b2d; }
   #site-wrap header:after {
     height: 0;
     content: '';
     visibility: hidden;
     clear: both;
     display: block; }
-  #site-wrap header h1, #site-wrap header nav, #site-wrap header li {
+  #site-wrap header h1, #site-wrap header nav {
     float: left; }
   #site-wrap header h1 {
     width: 113px;
@@ -65,10 +65,12 @@ button {
       background: transparent url(../img/logo.png) 0 0 no-repeat; }
   #site-wrap header nav {
     margin: 24px 0 0 39px; }
-    #site-wrap header nav li a {
-      padding: 15px; }
-      #site-wrap header nav li a:hover {
-        background: #313b3d; }
+    #site-wrap header nav li {
+      float: left; }
+      #site-wrap header nav li a {
+        padding: 15px; }
+        #site-wrap header nav li a:hover {
+          background: #313b3d; }
 
 #search, #user-login {
   float: right; }
@@ -86,7 +88,8 @@ button {
   width: 191px;
   margin-top: 18px;
   color: #8c989c;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative; }
   #user-login > img, #user-login > p {
     float: left; }
   #user-login img {
@@ -100,4 +103,15 @@ button {
     display: block; }
 
 #control-panel {
-  display: none; }
+  display: none;
+  position: absolute;
+  top: 35px; }
+  #control-panel li {
+    width: 151px;
+    padding: 5px 0 5px 15px;
+    background: #313b3d;
+    border-bottom: 1px solid #3b4648; }
+    #control-panel li a {
+      display: block; }
+    #control-panel li:last-child {
+      border-bottom: none; }
