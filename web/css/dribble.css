@@ -317,13 +317,24 @@ html, body {
   #article > p {
     width: 405px;
     margin-left: 29px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 25px;
     float: left; }
+    #article > p ~ p {
+      width: 577px; }
   #article dl {
+    margin: 3px 27px 0 0;
+    text-align: right;
     float: right; }
+    #article dl dt {
+      margin-bottom: 20px;
+      font-size: 17px; }
+    #article dl dd {
+      margin-bottom: 2px; }
+      #article dl dd a {
+        color: #323b3d; }
   #article img {
-    margin-top: 69px;
+    margin: 44px 0 40px;
     clear: both; }
 
 #lesson-info {
