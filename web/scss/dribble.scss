@@ -558,5 +558,48 @@ html, body {
 		}
 }
 #comments-list {
-	
+	margin-top: 50px;
+		>ul {
+			>li {
+				background: transparent url(../img/vertical_line_pattern2.png) 18px 0 repeat-y;
+			}
+		}
+		li {
+			@include clearFix;
+		}
+		img, .comment-content {
+			float: left;
+		}
+		img {
+			margin-right: 14px;
+		}
+		p {
+			line-height: 19px;
+		}
+		.comment-content {
+			width: 594px;
+				h3 {
+					margin-bottom: 5px;
+					font-size: 12px;
+					@include clearFix;
+						span {
+							font-size: 11px;
+							color: #89989c;
+							text-align: right;
+							float: right;
+						}
+				}
+		}
+		.reply-box {
+			margin-top: 8px;
+			@include clearFix;
+				li {
+					font-weight: bold;
+					font-size: 11px;
+					float: left;
+						a {
+							color: #262626;
+						}
+				}
+		}
 }

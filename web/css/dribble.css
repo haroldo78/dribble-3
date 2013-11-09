@@ -494,3 +494,50 @@ html, body {
     border-bottom: none;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px; }
+
+#comments-list {
+  margin-top: 50px; }
+  #comments-list > ul > li {
+    background: transparent url(../img/vertical_line_pattern2.png) 18px 0 repeat-y; }
+  #comments-list li:after {
+    height: 0;
+    content: '';
+    visibility: hidden;
+    clear: both;
+    display: block; }
+  #comments-list img, #comments-list .comment-content {
+    float: left; }
+  #comments-list img {
+    margin-right: 14px; }
+  #comments-list p {
+    line-height: 19px; }
+  #comments-list .comment-content {
+    width: 594px; }
+    #comments-list .comment-content h3 {
+      margin-bottom: 5px;
+      font-size: 12px; }
+      #comments-list .comment-content h3:after {
+        height: 0;
+        content: '';
+        visibility: hidden;
+        clear: both;
+        display: block; }
+      #comments-list .comment-content h3 span {
+        font-size: 11px;
+        color: #89989c;
+        text-align: right;
+        float: right; }
+  #comments-list .reply-box {
+    margin-top: 8px; }
+    #comments-list .reply-box:after {
+      height: 0;
+      content: '';
+      visibility: hidden;
+      clear: both;
+      display: block; }
+    #comments-list .reply-box li {
+      font-weight: bold;
+      font-size: 11px;
+      float: left; }
+      #comments-list .reply-box li a {
+        color: #262626; }
