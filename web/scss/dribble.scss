@@ -458,7 +458,9 @@ html, body {
 // Next lesson module
 #next-lesson {
 	margin-top: 21px;
+	padding-bottom: 41px;
 	@include clearFix;
+	border-bottom: 2px solid #eaeeef;
 }
 #lesson-instructor-info {
 	float: left;
@@ -494,5 +496,64 @@ html, body {
 							background: transparent url(../img/right_arrow_icon.png) right center no-repeat;
 						}
 				}
+		}
+}
+
+// Questions and comments
+#questions {
+	margin-top: 48px;
+		p {
+			font-weight: bold;
+			font-size: 16px;
+			@include clearFix;
+				span {
+					margin-top: 2px;
+					font-size: 11px;
+					float: right;
+						a {
+							color: #89989c;
+							border-bottom: 2px solid #eaeeef;
+						}
+				}
+		}
+}
+#comments {
+	margin-top: 45px;
+	@include clearFix;
+		img, form {
+			float: left;
+		}
+		img {
+			margin-right: 14px;
+		}
+		form {
+			p + p {
+				background: #f4f6f7;
+				border: 2px solid #eaeeef;
+				border-top: none;
+				border-bottom-right-radius: 5px;
+				border-bottom-left-radius: 5px;
+			}
+			button {
+				margin: 12px 0 16px 503px;
+				padding: 11px;
+				font-weight: bold;
+				font-size: 12px;
+				color: #fff;
+				text-align: center;
+				background: #78c8ce;
+				border-radius: 5px;
+			}
+		}
+		textarea {
+			width: 562px;
+			height: 49px;
+			padding: 14px;
+			font-family: Arial, Verdana, sans-serif;
+			font-size: 12px;
+			border: 2px solid #eaeeef;
+			border-bottom: none;
+			border-top-right-radius: 5px;
+			border-top-left-radius: 5px;
 		}
 }
