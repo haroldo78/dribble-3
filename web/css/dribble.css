@@ -422,4 +422,16 @@ html, body {
       display: block; }
 
 #goto-next-lesson {
+  font-size: 16px;
+  text-align: right;
   float: right; }
+  #goto-next-lesson p {
+    margin-top: 4px;
+    line-height: 24px; }
+    #goto-next-lesson p span {
+      display: block; }
+      #goto-next-lesson p span a {
+        padding-right: 24px;
+        font-weight: bold;
+        color: #323b3d;
+        background: transparent url(../img/right_arrow_icon.png) right center no-repeat; }

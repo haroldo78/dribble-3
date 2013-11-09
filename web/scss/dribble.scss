@@ -455,6 +455,7 @@ html, body {
 	background-position: left 0;
 }
 
+// Next lesson module
 #next-lesson {
 	margin-top: 21px;
 	@include clearFix;
@@ -478,5 +479,20 @@ html, body {
 		}
 }
 #goto-next-lesson {
+	font-size: 16px;
+	text-align: right;
 	float: right;
+		p {
+			margin-top: 4px;
+			line-height: 24px;
+				span {
+					display: block;
+						a {
+							padding-right: 24px;
+							font-weight: bold;
+							color: #323b3d;
+							background: transparent url(../img/right_arrow_icon.png) right center no-repeat;
+						}
+				}
+		}
 }
