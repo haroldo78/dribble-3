@@ -421,7 +421,7 @@ html, body {
 }
 #settings {
 	height: 40px;
-	margin-top: 42px;
+	margin-top: 68px;
 	background: transparent url(../img/horizontal_line_pattern2.png) left center repeat-x;
 		ul {
 			width: 180px;
@@ -453,4 +453,30 @@ html, body {
 	padding-right: 15px;
 	background-image: url(../img/check_icon_on.png);
 	background-position: left 0;
+}
+
+#next-lesson {
+	margin-top: 21px;
+	@include clearFix;
+}
+#lesson-instructor-info {
+	float: left;
+		img, p {
+			float: left;
+		}
+		img {
+			margin-right: 15px;
+		}
+		p {
+			margin-top: 5px;
+			font-size: 16px;
+			line-height: 22px;
+				span {
+					font-weight: bold;
+					display: block;
+				}
+		}
+}
+#goto-next-lesson {
+	float: right;
 }

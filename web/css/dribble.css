@@ -362,7 +362,7 @@ html, body {
 
 #settings {
   height: 40px;
-  margin-top: 42px;
+  margin-top: 68px;
   background: transparent url(../img/horizontal_line_pattern2.png) left center repeat-x; }
   #settings ul {
     width: 180px;
@@ -397,3 +397,29 @@ html, body {
   padding-right: 15px;
   background-image: url(../img/check_icon_on.png);
   background-position: left 0; }
+
+#next-lesson {
+  margin-top: 21px; }
+  #next-lesson:after {
+    height: 0;
+    content: '';
+    visibility: hidden;
+    clear: both;
+    display: block; }
+
+#lesson-instructor-info {
+  float: left; }
+  #lesson-instructor-info img, #lesson-instructor-info p {
+    float: left; }
+  #lesson-instructor-info img {
+    margin-right: 15px; }
+  #lesson-instructor-info p {
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 22px; }
+    #lesson-instructor-info p span {
+      font-weight: bold;
+      display: block; }
+
+#goto-next-lesson {
+  float: right; }
