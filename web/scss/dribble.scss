@@ -376,6 +376,7 @@ html, body {
 			float: left;
 				~p {
 					width: 577px;
+					float: none;
 				}
 		}
 		dl {
@@ -417,4 +418,39 @@ html, body {
 					float: right;
 				}
 		}
+}
+#settings {
+	height: 40px;
+	margin-top: 42px;
+	background: transparent url(../img/horizontal_line_pattern2.png) left center repeat-x;
+		ul {
+			width: 180px;
+			margin: 0 auto;
+			@include clearFix;
+		}
+		li {
+			float: left;
+				a {
+					width: 40px;
+					height: 40px;
+					@include textIndent;
+					background-color: #fff;
+					background-repeat: no-repeat;
+				}
+		}
+}
+#favs {
+	padding-left: 15px;
+	background-image: url(../img/favorite_icon_off.png);
+	background-position: right 0;
+}
+#refresh {
+	padding: 0 15px;
+	background-image: url(../img/refresh_icon_off.png);
+	background-position: center 0;
+}
+#check {
+	padding-right: 15px;
+	background-image: url(../img/check_icon_on.png);
+	background-position: left 0;
 }

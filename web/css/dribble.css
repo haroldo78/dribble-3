@@ -321,7 +321,8 @@ html, body {
     line-height: 25px;
     float: left; }
     #article > p ~ p {
-      width: 577px; }
+      width: 577px;
+      float: none; }
   #article dl {
     margin: 3px 27px 0 0;
     text-align: right;
@@ -358,3 +359,41 @@ html, body {
       text-align: right;
       background: transparent url(../img/clock_icon.png) 0 0 no-repeat;
       float: right; }
+
+#settings {
+  height: 40px;
+  margin-top: 42px;
+  background: transparent url(../img/horizontal_line_pattern2.png) left center repeat-x; }
+  #settings ul {
+    width: 180px;
+    margin: 0 auto; }
+    #settings ul:after {
+      height: 0;
+      content: '';
+      visibility: hidden;
+      clear: both;
+      display: block; }
+  #settings li {
+    float: left; }
+    #settings li a {
+      width: 40px;
+      height: 40px;
+      text-indent: -9999px;
+      display: block;
+      background-color: #fff;
+      background-repeat: no-repeat; }
+
+#favs {
+  padding-left: 15px;
+  background-image: url(../img/favorite_icon_off.png);
+  background-position: right 0; }
+
+#refresh {
+  padding: 0 15px;
+  background-image: url(../img/refresh_icon_off.png);
+  background-position: center 0; }
+
+#check {
+  padding-right: 15px;
+  background-image: url(../img/check_icon_on.png);
+  background-position: left 0; }
