@@ -39,37 +39,39 @@ html, body {
 
 // Site wrap
 #site-wrap {
-	header {
-		height: 69px;
-		padding-top: 1px; // Fix collapsible-margin
-		background: $darkGray;
-		@include clearFix;
-			h1, nav {
-				float: left;
-			}
-			h1 {
-				width: 113px;
-				margin: 23px 0 0 24px;
-					a {
-						width: 113px;
-						height: 24px;
-						@include textIndent;
-						background: transparent url(../img/logo.png) 0 0 no-repeat;
-				  }
-			}
-			nav {
-				margin: 24px 0 0 39px;
-					li {
-						float: left;
-							a {
-								padding: 15px;
-									&:hover {
-										background: $lightGray;
-									}
-							}
-					}
-			}
-	}
+	width: 980px;
+	@include clearFix;
+		header {
+			height: 69px;
+			padding-top: 1px; // Fix collapsible-margin
+			background: $darkGray;
+			@include clearFix;
+				h1, nav {
+					float: left;
+				}
+				h1 {
+					width: 113px;
+					margin: 23px 0 0 24px;
+						a {
+							width: 113px;
+							height: 24px;
+							@include textIndent;
+							background: transparent url(../img/logo.png) 0 0 no-repeat;
+					  }
+				}
+				nav {
+					margin: 24px 0 0 39px;
+						li {
+							float: left;
+								a {
+									padding: 15px;
+										&:hover {
+											background: $lightGray;
+										}
+								}
+						}
+				}
+		}
 }
 #search, #user-login {
 	float: right;
@@ -134,6 +136,9 @@ html, body {
 }
 
 // Course info
+#course-info, #content {
+	float: left;
+}
 #course-info {
 	width: 270px;
 	padding-bottom: 415px;
@@ -343,5 +348,58 @@ html, body {
 			height: 24px;
 			background: transparent url(../img/check_icon.png) 0 0 no-repeat;
 			top: 21px; left: -26px;
+		}
+}
+
+// Main content display area
+#content {
+	//width: 710px;
+	width: 648px;
+	padding-top: 49px;
+	padding-right: 31px;
+	padding-left: 31px;
+}
+#article {
+	color: #323b3d;
+		>h1 {
+			margin-bottom: 44px;
+			padding-bottom: 43px;
+			font-size: 21px;
+			line-height: 32px;
+			border-bottom: 1px solid #eaeeef;
+		}
+		>p {
+			width: 405px;
+			margin-left: 29px;
+			font-size: 14px;
+			line-height: 25px;
+			float: left;
+		}
+		dl {
+			float: right;
+		}
+		img {
+			margin-top: 69px;
+			clear: both;
+		}
+}
+#lesson-info {
+	margin-bottom: 23px;
+	padding-top: 1px; // Fix collapsible-margin
+	@include clearFix;
+		p {
+			padding-left: 24px;
+			background: transparent url(../img/picture_icon_light.png) 0 0 no-repeat;
+			float: left;
+				span {
+					font-weight: bold;
+				}
+				+p {
+					width: 105px;
+					padding-left: 0px;
+					text-align: right;
+					background: transparent url(../img/clock_icon.png) 0 0 no-repeat;
+					float: right;
+				}
 		}
 }

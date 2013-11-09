@@ -1,5 +1,5 @@
 /* Override default browser styles */
-body, p, ul, li, table, td, a, h1, h2, h3, h4, h5, h6, input, button, figure, figcaption {
+body, p, ul, li, table, td, a, h1, h2, h3, h4, h5, h6, input, button, figure, figcaption, dl, dt, dd {
   margin: 0;
   padding: 0; }
 
@@ -45,35 +45,43 @@ button {
 html, body {
   height: 100%; }
 
-#site-wrap header {
-  height: 69px;
-  padding-top: 1px;
-  background: #232b2d; }
-  #site-wrap header:after {
+#site-wrap {
+  width: 980px; }
+  #site-wrap:after {
     height: 0;
     content: '';
     visibility: hidden;
     clear: both;
     display: block; }
-  #site-wrap header h1, #site-wrap header nav {
-    float: left; }
-  #site-wrap header h1 {
-    width: 113px;
-    margin: 23px 0 0 24px; }
-    #site-wrap header h1 a {
-      width: 113px;
-      height: 24px;
-      text-indent: -9999px;
-      display: block;
-      background: transparent url(../img/logo.png) 0 0 no-repeat; }
-  #site-wrap header nav {
-    margin: 24px 0 0 39px; }
-    #site-wrap header nav li {
+  #site-wrap header {
+    height: 69px;
+    padding-top: 1px;
+    background: #232b2d; }
+    #site-wrap header:after {
+      height: 0;
+      content: '';
+      visibility: hidden;
+      clear: both;
+      display: block; }
+    #site-wrap header h1, #site-wrap header nav {
       float: left; }
-      #site-wrap header nav li a {
-        padding: 15px; }
-        #site-wrap header nav li a:hover {
-          background: #313b3d; }
+    #site-wrap header h1 {
+      width: 113px;
+      margin: 23px 0 0 24px; }
+      #site-wrap header h1 a {
+        width: 113px;
+        height: 24px;
+        text-indent: -9999px;
+        display: block;
+        background: transparent url(../img/logo.png) 0 0 no-repeat; }
+    #site-wrap header nav {
+      margin: 24px 0 0 39px; }
+      #site-wrap header nav li {
+        float: left; }
+        #site-wrap header nav li a {
+          padding: 15px; }
+          #site-wrap header nav li a:hover {
+            background: #313b3d; }
 
 #search, #user-login {
   float: right; }
@@ -118,6 +126,9 @@ html, body {
       display: block; }
     #control-panel li:last-child {
       border-bottom: none; }
+
+#course-info, #content {
+  float: left; }
 
 #course-info {
   width: 270px;
@@ -288,3 +299,51 @@ html, body {
     background: transparent url(../img/check_icon.png) 0 0 no-repeat;
     top: 21px;
     left: -26px; }
+
+#content {
+  width: 648px;
+  padding-top: 49px;
+  padding-right: 31px;
+  padding-left: 31px; }
+
+#article {
+  color: #323b3d; }
+  #article > h1 {
+    margin-bottom: 44px;
+    padding-bottom: 43px;
+    font-size: 21px;
+    line-height: 32px;
+    border-bottom: 1px solid #eaeeef; }
+  #article > p {
+    width: 405px;
+    margin-left: 29px;
+    font-size: 14px;
+    line-height: 25px;
+    float: left; }
+  #article dl {
+    float: right; }
+  #article img {
+    margin-top: 69px;
+    clear: both; }
+
+#lesson-info {
+  margin-bottom: 23px;
+  padding-top: 1px; }
+  #lesson-info:after {
+    height: 0;
+    content: '';
+    visibility: hidden;
+    clear: both;
+    display: block; }
+  #lesson-info p {
+    padding-left: 24px;
+    background: transparent url(../img/picture_icon_light.png) 0 0 no-repeat;
+    float: left; }
+    #lesson-info p span {
+      font-weight: bold; }
+    #lesson-info p + p {
+      width: 105px;
+      padding-left: 0px;
+      text-align: right;
+      background: transparent url(../img/clock_icon.png) 0 0 no-repeat;
+      float: right; }
