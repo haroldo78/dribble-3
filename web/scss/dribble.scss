@@ -14,7 +14,7 @@ $redOrangeDarker: #de5939;
 @mixin bodyStyle {
 	font: 13px/18px Arial, Verdana, sans-serif;
 	color: $bodyText;
-	background: $bodyBg url(../img/test_bg.jpg) 0 0 no-repeat;
+	background: $bodyBg;
 }
 @mixin clearFix {
 	&:after {
@@ -40,6 +40,7 @@ html, body {
 // Site wrap
 #site-wrap {
 	width: 980px;
+	margin: 0 auto;
 	@include clearFix;
 		header {
 			height: 69px;
@@ -142,6 +143,7 @@ html, body {
 #course-info {
 	width: 270px;
 	padding-bottom: 415px;
+	background: $lightGray;
 }
 #course-highlight {
 	height: 203px;
@@ -524,6 +526,8 @@ html, body {
 			float: left;
 		}
 		img {
+			width: 40px;
+			height: 40px;
 			margin-right: 14px;
 		}
 		form {
@@ -571,6 +575,8 @@ html, body {
 			float: left;
 		}
 		img {
+			width: 40px;
+			height: 40px;
 			margin-right: 14px;
 		}
 		p {
@@ -600,6 +606,21 @@ html, body {
 						a {
 							color: #262626;
 						}
+				}
+		}
+		.child-comment {
+			margin-left: 55px;
+			padding-top: 32px;
+			clear: both;
+				li {
+					margin-bottom: 11px;
+				}
+				img {
+					width: 30px;
+					height: 30px;
+				}
+				.comment-content {
+					width: 549px;
 				}
 		}
 }

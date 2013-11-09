@@ -10,7 +10,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   font: 13px/18px Arial, Verdana, sans-serif;
   color: #262626;
-  background: white url(../img/test_bg.jpg) 0 0 no-repeat; }
+  background: white; }
 
 a {
   text-decoration: none;
@@ -46,7 +46,8 @@ html, body {
   height: 100%; }
 
 #site-wrap {
-  width: 980px; }
+  width: 980px;
+  margin: 0 auto; }
   #site-wrap:after {
     height: 0;
     content: '';
@@ -132,7 +133,8 @@ html, body {
 
 #course-info {
   width: 270px;
-  padding-bottom: 415px; }
+  padding-bottom: 415px;
+  background: #313b3d; }
 
 #course-highlight {
   height: 203px;
@@ -468,6 +470,8 @@ html, body {
   #comments img, #comments form {
     float: left; }
   #comments img {
+    width: 40px;
+    height: 40px;
     margin-right: 14px; }
   #comments form p + p {
     background: #f4f6f7;
@@ -508,6 +512,8 @@ html, body {
   #comments-list img, #comments-list .comment-content {
     float: left; }
   #comments-list img {
+    width: 40px;
+    height: 40px;
     margin-right: 14px; }
   #comments-list p {
     line-height: 19px; }
@@ -541,3 +547,14 @@ html, body {
       float: left; }
       #comments-list .reply-box li a {
         color: #262626; }
+  #comments-list .child-comment {
+    margin-left: 55px;
+    padding-top: 32px;
+    clear: both; }
+    #comments-list .child-comment li {
+      margin-bottom: 11px; }
+    #comments-list .child-comment img {
+      width: 30px;
+      height: 30px; }
+    #comments-list .child-comment .comment-content {
+      width: 549px; }
