@@ -29,9 +29,12 @@ $redOrangeDarker: #de5939;
 	text-indent: -9999px;
 	display: block;
 }
+@mixin iconSprite($bgColor, $yPos) {
+	background: $bgColor url(../img/sprite/icons.png) 0 $yPos no-repeat;
+}
 
 // Imports
-@import 'reset';
+@import "reset";
 
 html, body {
 	height: 100%;
@@ -109,11 +112,11 @@ html, body {
 			line-height: 32px;
 			background: transparent url(../img/dropdown_icon.png) right center no-repeat;
 		}
-		&:hover {
+		/*&:hover {
 			#control-panel {
 				display: block;
 			}
-		}
+		}*/
 }
 #control-panel {
 	display: none;

@@ -101,7 +101,12 @@ html, body {
   margin-top: 18px;
   color: #8c989c;
   cursor: pointer;
-  position: relative; }
+  position: relative;
+  /*&:hover {
+  	#control-panel {
+  		display: block;
+  	}
+  }*/ }
   #user-login > img, #user-login > p {
     float: left; }
   #user-login img {
@@ -111,8 +116,6 @@ html, body {
     padding: 0 22px 0 16px;
     line-height: 32px;
     background: transparent url(../img/dropdown_icon.png) right center no-repeat; }
-  #user-login:hover #control-panel {
-    display: block; }
 
 #control-panel {
   display: none;
